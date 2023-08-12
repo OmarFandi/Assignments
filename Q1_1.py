@@ -63,7 +63,6 @@ elif PC.upper() == "LIF002_Y" :
     print ("Height Standard Deviation: ", H_std_deviation)
     print("Weight Mean: ", W_mean_value)
     print("Weight Standard Deviation: ", W_std_deviation)
- 
 
 
 
