@@ -26,7 +26,7 @@ R2_mean_H = [10.571 , 8.7 , 8.652 , 9.308]
 R2_mean_W = [289.19 , 320.43 , 323.2 , 326.07]
 Y2_mean_H = [8.455 , 7.521 , 8.301 , 8.482]
 Y2_mean_W = [516.11 , 521.48 , 526.48 , 531.11]
-
+# Creating a IF function to calculate the output based on the input
 PC = input("Please enter the product code: ")
 if  PC.upper() == "LIF001_B" :
     H_mean_value = np.mean(B1_mean_H)
@@ -64,11 +64,10 @@ elif PC.upper() == "LIF002_Y" :
     print ("Height Standard Deviation: ", H_std_deviation)
     print("Weight Mean: ", W_mean_value)
     print("Weight Standard Deviation: ", W_std_deviation)
-#y= input("Please type 'Y' to get the better process control for the Y family: ")
-#if y.upper()=="Y":
+
 # Q1 Section 2
 import matplotlib.pyplot as plt
-
+# Creating a matrix for the height values
 products = ["B1_mean_H", "Y1_mean_H", "R2_mean_H", "Y2_mean_H"]
 heights = [ [8.644, 10.549, 10.571, 8.455],
             [9.228, 10.524, 8.7, 7.521],
@@ -94,7 +93,7 @@ plt.grid(axis='y', linestyle='-', alpha=0.7)
 plt.tight_layout()
 plt.show()
 
-
+# Creating a matrix for the weight values
 products = ["B1_mean_W", "Y1_mean_W", "R2_mean_W", "Y2_mean_W"]
 weights = [ [384.63, 375, 289.19, 516.11],
             [384.63, 378.89, 320.43, 521.48],
